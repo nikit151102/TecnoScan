@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="textContent">
+        <p class="title">
+            Основные параметры работы компьютерной диагностики автомобиля:
+        </p>
+    </div>
+    <div class="content">
+        <div class="column">
+            <ng-container *ngFor="let item of list1">
+                <p class="columnItem">{{item}}</p>
+            </ng-container>
+            
+        </div>
+        <div class="column">
+            <ng-container *ngFor="let item of list2">
+                <p class="columnItem">{{item}}</p>
+            </ng-container>
+        </div>
+    </div>
+    
+    <div class="top-right"></div>
+    <div class="bottom-left"></div>
+    <div class="left-center"></div>
+    <div class="right-center"></div>
+</div>

@@ -1,0 +1,149 @@
+.container{
+    position: relative;
+    width: 100%;
+    background: #E94444;
+    display: flex;
+    flex-direction: column;
+}
+
+.container::before,
+.container::after,
+.top-right::before,
+.bottom-left::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+
+/* Top-left corner */
+.container::before {
+  background-image: url('../../../assets/subaru.png');
+  width: 100px;
+  height: 65px;
+  top: 2rem;
+  left: 2rem;
+}
+
+/* Bottom-right corner */
+.container::after {
+  background-image: url('../../../assets/acura.png');
+  width: 70px;
+  height: 70px;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+/* Top-right corner */
+.top-right::before {
+  background-image: url('../../../assets/opel.png');
+  width: 95px;
+  height: 80px;
+  top: 2rem;
+  right: 2rem;
+}
+
+/* Bottom-left corner */
+.bottom-left::after {
+  background-image: url('../../../assets/lexus.png');
+  width: 110px;
+  height: 80px;
+  bottom: 2rem;
+  left: 2rem;
+
+}
+
+
+.textContent{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 3rem;
+    color: #fff;
+    
+}
+.text{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #fff;
+    width: 85%;
+}
+
+.cards{
+    width: 100%;
+    display:flex;
+    justify-content: space-around; 
+    margin-bottom: 2.5rem;
+}
+.card{
+    flex: 1;
+    display: flex;
+}
+
+.altelLeft{
+    justify-content: flex-end;
+}
+
+.altelRight{
+    justify-content: flex-start;
+}
+
+
+
+@media (max-width: 1200px) {
+  .title {
+      font-size: 2.5rem;
+  }
+
+  .text {
+      font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 0.5rem;
+      padding-top: 6rem;
+      padding-bottom: 5rem;
+  }
+
+  .title {
+      font-size: 2rem;
+  }
+
+  .text {
+      font-size: 1rem;
+  }
+
+  .cards {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .altelLeft,
+  .altelRight {
+      justify-content: center;
+  }
+
+  .card {
+      margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+      font-size: 1.5rem;
+  }
+
+  .text {
+      font-size: 0.875rem;
+  }
+
+  .cards {
+      margin-bottom: 1.5rem;
+  }
+}

@@ -1,0 +1,137 @@
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container::after,
+.top-right::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+
+
+.container::before{
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* Top-left corner */
+.container::before {
+  background-image: url('../../../assets/shesterenki_icon.png');
+
+  top: 2rem;
+  left: 2rem;
+}
+
+/* Bottom-right corner */
+.container::after {
+  background-image: url('../../../assets/bochka_icon.png');
+  width: 70px;
+  height: 70px;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+/* Top-right corner */
+.top-right::before {
+  background-image: url('../../../assets/zerkalo_icon.png');
+  width: 95px;
+  height: 80px;
+  top: 2rem;
+  right: 2rem;
+}
+
+
+
+
+.bottom-left::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+/* Bottom-left corner */
+.bottom-left::after {
+  background-image: url('../../../assets/nasos_icon.png');
+  width: 110px;
+  height: 80px;
+  bottom: 2rem;
+  left: 2rem;
+
+}
+
+
+.textContent{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.text{
+    font-weight: 400;
+    font-size: 1.5rem;
+    width: 85%;
+}
+
+
+@media (max-width: 1200px) {
+  .title {
+      font-size: 2.5rem;
+  }
+
+  .text {
+      font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 0.5rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+  }
+
+  .title {
+      font-size: 2rem;
+      text-align: center;
+  }
+
+  .text {
+      font-size: 1rem;
+  }
+
+  .textContent > div {
+    width: 100% !important;
+      padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+      font-size: 1.5rem;
+  }
+
+  .text {
+      font-size: 0.875rem;
+  }
+
+  li.text {
+      margin-bottom: 1rem;
+  }
+}

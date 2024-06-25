@@ -1,0 +1,329 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.content {
+    position: relative;
+    width: 50%;
+}
+
+.sectionText {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    margin-left: 6rem;
+}
+
+
+
+
+/* Top-left corner */
+.content::before {
+    background-image: url('../../../assets/mazda_mitsubishi_lalala_icons.png');
+    width: 274px;
+    height: 59px;
+    top: 2rem;
+    left: 0.5rem;
+    background-size: cover;
+}
+
+
+.content::before {
+    content: "";
+    position: absolute;
+    width: 230px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+.content-top-right::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Top-right corner */
+.content-top-right::before {
+    background-image: url('../../../assets/bmw_icon.png');
+    top: 2rem;
+    right: 0.5rem;
+}
+
+
+
+.content-bottom-left::after {
+    content: "";
+    position: absolute;
+    width: 222px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Bottom-left corner */
+.content-bottom-left::after {
+    background-image: url('../../../assets/bigudi_lalala.png');
+    background-size: inherit;
+    width: 222px;
+    height: 38px;
+    bottom: 2rem;
+    left: -5rem;
+    transform: rotate(90deg);
+}
+
+
+
+.redLine {
+    position: relative;
+    width: 40%;
+    background: #e94444;
+}
+
+
+.redLine::before,
+.redLine::after,
+.redLine-top-right::before,
+.redLine-bottom-left::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* Top-left corner */
+.redLine::before {
+    background-image: url('../../../assets/volkswagen_icon.png');
+    top: 2rem;
+    left: 0.5rem;
+}
+
+.redLine::after {
+    background-image: url('../../../assets/mercedes-benz_icon.jpg');
+    bottom: 2rem;
+    right: 0.5rem;
+}
+
+
+
+.redLine-top-right::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Top-right corner */
+.redLine-top-right::before {
+    background-image: url('../../../assets/tochki2_icon.png');
+    top: 5rem;
+    right: -3.2rem;
+}
+
+
+
+
+
+.redLine img {
+    width: 140%;
+    position: relative;
+    right: 8rem;
+    margin-top: 7rem;
+}
+
+.whiteLine {
+    position: relative;
+    width: 10%;
+}
+
+
+.whiteLine-bottom-left::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Bottom-left corner */
+.whiteLine-bottom-left::after {
+    background-image: url('../../../assets/honda_icon.png');
+    bottom: 1.7rem;
+    left: 0.5rem;
+}
+
+.whiteLine::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.whiteLine::before {
+    background-image: url('../../../assets/tochki_lalala.png');
+    top: 5rem;
+    left: 0;
+}
+
+.logo {
+    width: 20rem;
+    height: auto;
+}
+
+.logo img {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.logo_line {
+    width: 177px;
+    height: 17px;
+    background-color: #e94444;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #000;
+}
+
+.text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 2rem;
+    color: #000;
+    width: 80%;
+}
+
+button {
+    background-color: #e94444;
+    border: none;
+    color: #ffff;
+    width: 300px;
+    height: 60px;
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+}
+
+
+@media (max-width: 1200px) {
+    .sectionText {
+        margin-top: 6rem;
+        margin-left: 4rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .text {
+        font-size: 1.75rem;
+    }
+
+    button {
+        width: 250px;
+        height: 50px;
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+
+    }
+
+    .sectionText {
+        margin-top: 4rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .text {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 200px;
+        height: 45px;
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    .content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .redLine,
+    .whiteLine {
+        display: none;
+    }
+
+    .redLine {
+        display: none;
+    }
+
+    .redLine-top-right {
+        display: none;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .content::before{
+        display: none;
+    }
+
+    .content-bottom-left::after{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .sectionText {
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .text {
+        font-size: 1.25rem;
+    }
+
+    button {
+        width: 150px;
+        height: 40px;
+        font-size: 1.25rem;
+        margin-left: 0;
+    }
+
+}
