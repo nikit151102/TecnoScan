@@ -43,7 +43,7 @@
 .top-right::before {
     background-image: url('../../../assets/ryl_icon.png');
     width: 95px;
-    height: 95px;
+    height: 100px;
     top: 2rem;
     right: 2rem;
 }
@@ -174,7 +174,7 @@
    }
     .top-right::before{
         width: 81px;
-    height: 70px;
+    height: 80px;
     }
 
     .bottom-left::after{
