@@ -302,6 +302,10 @@ button {
     .content-bottom-left::after{
         display: none;
     }
+
+    .content-top-right::before{
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -313,10 +317,12 @@ button {
 
     .title {
         font-size: 1.5rem;
+        width: 100%;
     }
 
     .text {
         font-size: 1.25rem;
+        width: 100%;
     }
 
     button {

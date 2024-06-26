@@ -8,19 +8,33 @@
     padding-top: 60px;
 }
 
+
+
 app-header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     z-index: 1000; 
     background-color: #fff; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
+
 
 
 @media (max-width: 968px) {
     .container{
         width: 100%;
+    }
+    app-header{
+        width: 100%;
+        padding-left: 5%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
 }

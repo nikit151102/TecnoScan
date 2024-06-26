@@ -1,9 +1,9 @@
-<div class="container">
+
     <div class="logo">
         <img src="assets/logo.png" alt="logo">
     </div>
 
-
+<div class="nav">
     <nav>
         <p (click)="navigateTo('home')">
             Главная
@@ -16,4 +16,10 @@
         </p>
 
     </nav>
+
+
+    <p-button label="Меню" (click)="menu.toggle($event)" icon="pi pi-equals" [text]="true"/>
+    <p-tieredMenu #menu [model]="items" [popup]="true" />
+
 </div>
+

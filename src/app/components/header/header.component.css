@@ -1,15 +1,15 @@
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 
 nav {
     display: flex;
     justify-content: space-around;
     width: 50%;
 }
-
+.nav{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
 p {
     font-weight: 700;
     font-size: 1.6rem;
@@ -22,9 +22,40 @@ p {
     align-items: center;
 }
 
+
+:host ::ng-deep .p-button.p-button-text:not(:disabled):hover{
+    color: rgb(233 68 68);
+}
+
+:host ::ng-deep .p-button.p-button-text {
+    color: rgb(233 68 68);
+}
+:host ::ng-deep .p-button
+{
+    border: none;
+}
+
+:host ::ng-deep .p-tieredmenu.p-tieredmenu-overlay{
+top: 50px !important;
+}
+
+@media (max-width: 1350px) {
+    nav{
+        width: 100%;
+    }
+}
+
+@media (min-width: 969px) {
+    p-button{
+        display: none;
+    }
+}
+
 @media (max-width: 968px) {
     nav{
        display: none;
     }
-
+    .nav{
+        justify-content: flex-end;
+    }
 }
