@@ -10,6 +10,6 @@ import { Component } from '@angular/core';
 export class SectionOneComponent {
 
   getTel(){
-    window.open('tel:+87772516995')
+    window.open('tel:+77772516995')
   }
 }
