@@ -32,7 +32,7 @@
 
 /* Bottom-right corner */
 .container::after {
-    background-image: url('../../../assets/acura.png');
+    background-image: url('../../../assets/mkpp_icon.png');
     width: 70px;
     height: 70px;
     bottom: 2rem;
@@ -41,9 +41,9 @@
 
 /* Top-right corner */
 .top-right::before {
-    background-image: url('../../../assets/opel.png');
+    background-image: url('../../../assets/ryl_icon.png');
     width: 95px;
-    height: 80px;
+    height: 95px;
     top: 2rem;
     right: 2rem;
 }
