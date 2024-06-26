@@ -1,0 +1,11 @@
+version: '3.1'
+services:
+  frontend:
+    build:
+      context: ./TecnoScan
+      dockerfile: Dockerfile-frontend
+    ports:
+      - 80:80
+    volumes:
+      - ./TecnoScan:/app
+      - /app/node_modules
